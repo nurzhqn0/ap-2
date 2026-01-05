@@ -34,7 +34,7 @@ func (p *Pool) Start(numWorkers int) {
 		go p.worker(i)
 	}
 
-	// Start monitoring goroutine (Part C)
+	// start monitoring goroutine (Part C)
 	p.wg.Add(1)
 	go p.monitor()
 }
